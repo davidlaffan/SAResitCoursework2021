@@ -153,11 +153,11 @@ public class BinarySearchTree {
         // While we haven't found the Node
         // keep looking
 
-        while (focusNode.key.compareTo(key) != 0) {
+        while (focusNode.key.type.compareTo(key) != 0) {
 
             // If we should search to the left
 
-            if (focusNode.key.compareTo(key) < 0) {
+            if (focusNode.key.type.compareTo(key) < 0) {
 
                 // Shift the focus Node to the left child
 

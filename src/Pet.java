@@ -11,8 +11,13 @@ public class Pet{
 	
 	@Override
 	public String toString() {
+	String o = "Pet type: " + type + System.lineSeparator();
 	//TODO Implement
-	return" ";
+	return o;
 	}
+	
+	//new food
+	//find food
+	
 
 }
