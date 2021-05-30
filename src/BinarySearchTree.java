@@ -79,7 +79,6 @@ public class BinarySearchTree {
     // then go to its child nodes and so forth
 
     public void inOrderTraverseTree(Node focusNode) {
-
         if (focusNode != null) {
 
             // Traverse the left node
@@ -89,6 +88,25 @@ public class BinarySearchTree {
             // Visit the currently focused on node
 
             System.out.println(focusNode);
+
+            // Traverse the right node
+
+            inOrderTraverseTree(focusNode.rightChild);
+
+        }
+
+    }
+    
+    public void inOrderTraverseTreeProducts(Node focusNode) {
+        if (focusNode != null) {
+
+            // Traverse the left node
+
+            inOrderTraverseTree(focusNode.leftChild);
+
+            // Visit the currently focused on node
+
+            System.out.println(focusNode.key.showProducts());
 
             // Traverse the right node
 
